@@ -1,0 +1,16 @@
+<div class="componente1">
+    <h3>Componente 1</h3>
+    <p>Lista de Paises</p>
+    <div>
+        <input class="form-group" #nombrepais/>
+        <button class="btn btn-primary" (click)="agregarPaid(nombrepais.value)">
+            Agregar un pais
+        </button>
+    </div>
+
+    <ul>
+        <li *ngFor="let c of paises">
+            {{c}}
+        </li>
+    </ul>
+</div>
