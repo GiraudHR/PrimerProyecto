@@ -1,0 +1,11 @@
+<div class="componente2">
+    <h3>Componente 2</h3>
+    <div>
+        <button class="btn btn-primary" (click)="imgGrande()">Img Grande</button>
+        <button class="btn btn-success" (click)="imgChica()">Img Chica</button>
+    </div>
+    <div>
+        <img [style.width.px] = "imgWidth"
+        [src]="imgSrc">
+    </div>
+</div>

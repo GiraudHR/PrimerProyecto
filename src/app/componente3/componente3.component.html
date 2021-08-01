@@ -1,0 +1,27 @@
+<div class="col-6 componente3 form-group">
+    <h3>Componente 3</h3>
+    <p >
+        <label class="" for="nombre">Nombre: </label>
+        <input  [(ngModel)]="persona.nombre" 
+                [style.background-color]="persona.nombre ? 'green' : 'Red'" id="nombre">
+    </p>
+    
+    <p>
+        <label for="apellido">Apellido: </label>
+        <input  [(ngModel)]="persona.apellido" 
+        [style.background-color]="persona.apellido ? 'LightGreen' : 'Red'"id="apellido">
+    </p>
+    
+    <p>
+        <label for="edad">Edad: </label>
+        <input  [(ngModel)]="persona.edad" 
+        [ngClass]="persona.edad ? 'estilo2' : 'estilo1'" id="edad">
+    </p>
+
+    <div *ngIf="persona.nombre && persona.apellido" style="border: 1px solid green">
+        <span>
+            Hola {{persona.nombre}} {{persona.apellido}} de {{persona.edad}} años
+        </span>
+    </div>
+</div>
+

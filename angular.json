@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "Primer-Proyecto"
+  "defaultProject": "Primer-Proyecto",
+  "cli": {
+    "analytics": false
+  }
 }
